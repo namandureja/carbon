@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<TextView
+
+    android:id="@+id/textsearch"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textSize="20sp"
+    android:fontFamily="@font/black"
+    android:textColor="#ADABAB"
+    />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".moreinfo">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city searcher"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mySearchView"
+        android:iconifiedByDefault="false"
+        android:hint="Search.."
+        android:padding="10dp"
+        android:layout_marginTop="80dp"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/myProgressBar"
+        android:layout_width="114dp"
+        android:layout_height="98dp"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_weight="0.5"
+        android:numColumns="auto_fit"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#231F20</color>
+    <color name="colorPrimaryDark">#231F20</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="good">#7FBF56</color>
+    <color name="moderate">#FFBA00</color>
+    <color name="unhealthy">#331BDB</color>
+    <color name="hazardous">#F25151</color>
+    <color name="list_colour">#9C9C9C</color>
+    <color name="unselected">#9D9D9D</color>
+    <color name="selected">#000</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+</resources>

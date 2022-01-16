@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+
+    // The desired corner radius. reduce it to keep it less rounded
+    <corners android:radius="32dp" />
+
+    // Add your desired padding
+
+</shape>

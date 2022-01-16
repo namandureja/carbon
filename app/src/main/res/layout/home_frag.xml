@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:overScrollMode="never"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#231F20"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/del_more"
+        android:layout_width="325dp"
+        android:layout_height="354dp"
+        android:transitionName="citychange_del"
+
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/delhi_illus" />
+
+    <ImageView
+        android:id="@+id/gen_more"
+        android:layout_width="536dp"
+        android:layout_height="264dp"
+        android:transitionName="citychange_del"
+
+        android:layout_marginTop="76dp"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/general_illus" />
+
+    <ImageView
+        android:id="@+id/mum_more"
+        android:layout_width="350dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="72dp"
+        android:adjustViewBounds="true"
+        android:transitionName="citychange_del"
+
+
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/mumbai_illus" />
+
+    <ImageView
+        android:id="@+id/ggn_more"
+        android:layout_width="533dp"
+        android:layout_height="254dp"
+        android:transitionName="citychange_del"
+
+        android:layout_marginTop="88dp"
+        android:adjustViewBounds="true"
+
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/gurgaon_illus" />
+
+    <ImageView
+        android:id="@+id/lon_more"
+        android:layout_width="418dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="24dp"
+        android:transitionName="citychange_del"
+
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/london_illus" />
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="36dp"
+        android:transitionName="cityname"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/black"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:letterSpacing="0.1"
+        android:textColor="#FAFAFA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/semibold"
+        android:text="AIR QUALITY"
+        android:textColor="#FAFAFA"
+        android:textSize="9.8sp"
+        android:letterSpacing="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_name" />
+
+    <TextView
+        android:id="@+id/aqi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/black"
+        android:transitionName="aqi"
+        android:elevation="5sp"
+        android:text="420"
+        android:textColor="#FAFAFA"
+        android:textSize="65sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_name"
+         />
+
+    <ImageView
+        android:id="@+id/cloud_left"
+        android:layout_width="354dp"
+        android:layout_height="122dp"
+        android:transitionName="cloudleft"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aqi_text"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/cloud_left" />
+
+    <ImageView
+        android:id="@+id/cloud_right"
+        android:layout_width="306dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="176dp"
+        android:transitionName="cloudright"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aqi_text"
+        app:layout_constraintVertical_bias="0.928"
+        app:srcCompat="@drawable/cloud_right" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="316dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aqi_text"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/cloudwhite_bg" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="457dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:transitionName="cloudwhite"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aqi_text"
+        app:srcCompat="@drawable/cloudwhite" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/del_more">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/semibold"
+            android:text="Your lifespan has\nbeen reduced by"
+            android:textColor="#000"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/life_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="4 months."
+            android:textColor="#000"
+            android:textSize="59sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/cig_click"
+            android:layout_width="322dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/life_span"
+            app:srcCompat="@drawable/cig_bg" />
+
+        <TextView
+            android:id="@+id/cig_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/semibold"
+            android:text="Oh! You smoke 15 cigaettes"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@+id/cig_click"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/cig_click"
+            app:layout_constraintVertical_bias="0.441" />
+
+        <TextView
+            android:id="@+id/cig_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/semibold"
+            android:text="everyday"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/cig_click"
+            app:layout_constraintEnd_toEndOf="@+id/cig_click"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/cig_click"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.13" />
+
+        <TextView
+            android:id="@+id/faq_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/semibold"
+            android:letterSpacing="0.1"
+            android:text="@string/data_faq"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cig_click" />
+
+        <TextView
+            android:id="@+id/faq_bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/semibold"
+            android:letterSpacing="0.1"
+            android:text="@string/faq_about"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faq_bt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/semibold"
+        android:letterSpacing="0.5"
+        android:padding="15dp"
+        android:text="VIEW MORE"
+        android:textColor="#FAFAFA"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aqi_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

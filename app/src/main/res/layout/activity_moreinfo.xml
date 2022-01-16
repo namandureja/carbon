@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moreinfokiid"
+    android:background="#393636"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moreinfo">
+
+
+    <EditText
+        android:id="@+id/mySearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/black"
+        android:layout_below="@+id/imageView4"
+        android:hint="Search here"
+        android:paddingStart="25dp"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:textColorHint="#ADABAB"
+        android:textSize="30sp" />
+
+    <ProgressBar
+        android:id="@+id/myProgressBar"
+        android:layout_width="114dp"
+        android:layout_height="98dp"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ListView
+        android:id="@+id/myListView"
+        android:divider="#707070"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mySearchView"
+        android:layout_marginTop="0dp"
+        android:dividerHeight="0.7dip"
+        android:numColumns="auto_fit" >
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="17dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="13dp"
+        myapp:srcCompat="@drawable/crossicon" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:fontFamily="@font/med"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"
+        android:text="No results found" />
+
+</RelativeLayout>

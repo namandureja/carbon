@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Contamino</string>
+    <string name="data_faq"><u>DATA MAY NOT BE 100% ACCURATE</u></string>
+    <string name="carbon">Carbon was inspired by Berkley Earth\'s findings about the relation between air pollution and smoking. The rule is simple : one cigarette per day is roughly equivalent to a PM 2.5 level of 22μg/m³.<u><i>(1)</i></u> Then, it calculates the reduction in life span from the study conducted by EPIC (University of Chicago) which states that for every additional 10 μg/m³ of PM 2.5, life span reduces by roughly 1 year.<u><i>(2)</i></u> </string>
+    <string name="q1">How does Carbon calculate the amount of years your lifespan has been reduced by?</string>
+    <string name="q2">Why the results for weekly and monthly smoked cigarettes might not be 100% accurate?</string>
+    <string name="ans2">The feature of displaying monthly and weekly cigarettes is in beta because we simply multiply the current level of PM 2.5 to account for a week and a month. For the full feature, we are working on gathering data that contains the history of PM 2.5 levels of a location, so we can provide accurate estimations. </string>
+    <string name="q3">Where does the AQI data come from?</string>
+    <string name="ans3">Real time air quality data comes from a free API by WAQI team and the EPA in the form of AQI levels which are usually updated every one hour.</string>
+    <string name="link1"><u>(1) http://berkeleyearth.org/air-pollution-and-cigarette-equivalence</u></string>
+    <string name="link2"><u>(2) https://aqli.epic.uchicago.edu/wp-content/uploads/2018/11/AQLI-Report.111918-2.pdf</u></string>
+    <string name="link3"><u>http://aqicn.org</u></string>
+    <string name="faq_about"><u>FAQ/About</u></string>
+</resources>

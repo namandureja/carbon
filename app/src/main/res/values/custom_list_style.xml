@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="title_style">
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/black</item>
+        <item name="android:color">#ADABAB</item>
+
+    </style>
+
+
+</resources>
